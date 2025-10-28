@@ -1,0 +1,86 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  padding: 1rem 3rem;
+  font-family: "roboto", sans-serif;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  font-family: "Margarine", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #3a2d23;
+}
+
+.nav-desktop {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-desktop a {
+  text-decoration: none;
+  color: #3a2d23;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-desktop a:hover {
+  color: #8c6b4a;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.socials a {
+  color: #3a2d23;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: #8c6b4a;
+}
+
+.whatsapp-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #25d366;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1da955;
+}
+
+/* Ícone menu (mobile) - apenas o botão, sem menu dentro */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  color: #3a2d23;
+  cursor: pointer;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .nav-desktop,
+  .socials {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
