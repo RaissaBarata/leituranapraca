@@ -1,19 +1,31 @@
 import React from "react";
 import "./HeroSection.css";
-import Logo from "../../assets/Logo.jpg";
 import HeroImage from "../../assets/HeroImage.jpg";
+import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
     <section className="hero">
+      {/* Lado esquerdo: imagem */}
       <div className="hero-left">
-        <div className="hero-image-container">
+        <motion.div
+          className="hero-image-container"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
           <img src={HeroImage} alt="Imagem Hero" className="hero-image" />
-        </div>{" "}
+        </motion.div>
       </div>
 
+      {/* Lado direito: texto e botões */}
       <div className="hero-right">
-        <div className="hero-content">
+        <motion.div
+          className="hero-content"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.3 }}
+        >
           <h1 className="hero-title">
             Doe livros, <br />
             compartilhe conhecimento.
@@ -27,7 +39,7 @@ export default function HeroSection() {
             <button className="hero-button primary">Fazer doação</button>
             <button className="hero-button outline">Assista vídeo</button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

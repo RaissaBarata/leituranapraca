@@ -134,20 +134,19 @@
   }
 
   .hero-image-container {
-    position: relative;
+    position: relative; /* mantém o controle da imagem */
     width: 60%;
     height: auto;
-    margin: 2rem auto 0;
+    margin: 2rem auto 0; /* centraliza horizontalmente */
   }
 
   .hero-image {
     width: 100%;
     height: auto;
-    border: 4px solid #c71585;
   }
 
   .hero-image-container::before {
-    display: none;
+    display: none; /* remove a bola rosa em telas pequenas */
   }
 
   .hero-title {
