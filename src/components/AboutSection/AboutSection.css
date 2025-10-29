@@ -17,12 +17,11 @@
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
   text-align: center;
 
-  /* Página pautada */
   background-image: repeating-linear-gradient(
     to bottom,
     transparent,
     transparent 28px,
-    /* altura do espaço */ rgba(248, 172, 109, 0.43) 29px /* linha */
+    rgba(248, 172, 109, 0.43) 29px
   );
 
   /* Linha do texto */
@@ -31,14 +30,15 @@
 
 /* Tag */
 .about-tag {
-  background: #c71585;
-  color: #fff;
-  padding: 0.4rem 0.8rem;
-  border-radius: 50px;
   font-size: 0.9rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
   text-transform: uppercase;
+  color: #d63384; /* texto rosa mais escuro */
+  background-color: #ffe6f0; /* fundo rosa claro */
+  padding: 6px 14px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
 .about-title {
@@ -103,6 +103,11 @@
 
 /* Responsividade */
 @media (max-width: 768px) {
+  .about {
+    width: 90%;
+    padding: 2rem 0.5rem;
+    margin: auto;
+  }
   .page-card {
     padding: 2rem 1rem;
   }

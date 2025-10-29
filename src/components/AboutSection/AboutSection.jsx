@@ -34,7 +34,6 @@ export default function AboutSection() {
           <img src={AboutImage} alt="About us" className="about-image" />
         </div>
 
-        {/* Fitas nos cantos */}
         <img src={WashiTape} alt="Tape" className="tape-top-left" />
         <img src={WashiTape} alt="Tape" className="tape-top-right" />
         <img src={WashiTape} alt="Tape" className="tape-bottom-left" />

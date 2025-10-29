@@ -1,0 +1,142 @@
+/* === PROJECTS SECTION === */
+.projects {
+  padding: 20px 5%;
+}
+
+.projects__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.projects__tag {
+  display: inline-block;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #d63384; /* texto rosa mais escuro */
+  background-color: #ffe6f0; /* fundo rosa claro */
+  padding: 6px 14px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.projects__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.projects__subtitle {
+  color: #666;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* === GRID (Layout assimétrico inspirado na Luxura) === */
+.projects__grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  grid-template-areas:
+    "a b"
+    "a c";
+  gap: 24px;
+}
+
+/* === PROJECT CARD === */
+.project-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.project-card__slider {
+  position: relative;
+  margin: 0px 0px 30px 0px;
+  width: 100%;
+}
+
+.project-card__slider img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-a .project-card__slider img {
+  height: 950px;
+}
+
+/* === CONTEÚDO === */
+.project-card__content {
+  padding: 20px;
+  text-align: left;
+}
+
+.project-card__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.project-card__text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.project-card__placeholder {
+  background: #f3f3f3;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+/* === GRID AREAS === */
+.project-a {
+  grid-area: a;
+}
+
+.project-b {
+  grid-area: b;
+}
+
+.project-c {
+  grid-area: c;
+}
+
+.project-d {
+  grid-area: d;
+}
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 900px) {
+  .projects__grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d";
+  }
+
+  .project-a .project-card__slider img {
+    height: 300px;
+  }
+}

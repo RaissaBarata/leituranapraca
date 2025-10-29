@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import HeroSection from "./components/HeroSection/HeroSection";
 import MobileMenu from "./components/MobileMenu/MobileMenu";
 import AboutSection from "./components/AboutSection/AboutSection";
+import ProjectsSection from "./components/ProjectsSection/ProjectsSection";
 import "./App.css";
 
 export default function HomePage() {
@@ -18,6 +19,7 @@ export default function HomePage() {
         <AboutSection />
       </div>
       <MobileMenu open={menuOpen} closeMenu={closeMenu} />
+      <ProjectsSection />
     </>
   );
 }
