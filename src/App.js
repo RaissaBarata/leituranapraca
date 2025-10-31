@@ -5,6 +5,8 @@ import MobileMenu from "./components/MobileMenu/MobileMenu";
 import AboutSection from "./components/AboutSection/AboutSection";
 import ProjectsSection from "./components/ProjectsSection/ProjectsSection";
 import "./App.css";
+import EventsSection from "./components/EventsSection/EventsSection";
+import Footer from "./components/Footer/Footer";
 
 export default function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,6 +22,8 @@ export default function HomePage() {
       </div>
       <MobileMenu open={menuOpen} closeMenu={closeMenu} />
       <ProjectsSection />
+      <EventsSection />
+      <Footer />
     </>
   );
 }

@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 export default function HeroSection() {
   return (
     <section className="hero">
-      {/* Lado esquerdo: imagem */}
       <div className="hero-left">
         <motion.div
           className="hero-image-container"
@@ -18,7 +17,6 @@ export default function HeroSection() {
         </motion.div>
       </div>
 
-      {/* Lado direito: texto e botões */}
       <div className="hero-right">
         <motion.div
           className="hero-content"

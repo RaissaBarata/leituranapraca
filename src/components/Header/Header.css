@@ -82,7 +82,6 @@
   background-color: #1da955;
 }
 
-/* Ícone menu (mobile) - apenas o botão, sem menu dentro */
 .menu-icon {
   display: none;
   font-size: 1.8rem;
@@ -90,7 +89,6 @@
   cursor: pointer;
 }
 
-/* Responsivo */
 @media (max-width: 900px) {
   .nav-desktop,
   .socials {

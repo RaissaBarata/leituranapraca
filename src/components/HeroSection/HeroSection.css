@@ -29,7 +29,6 @@
   z-index: 2;
 }
 
-/* borda rosa "por baixo", com formato orgânico */
 .hero-image-container::before {
   content: "";
   position: absolute;
@@ -123,8 +122,8 @@
 
   .hero-left {
     display: flex;
-    justify-content: center; /* centraliza horizontalmente */
-    align-items: center; /* centraliza verticalmente */
+    justify-content: center;
+    align-items: center;
   }
 
   .hero-right {
@@ -134,10 +133,10 @@
   }
 
   .hero-image-container {
-    position: relative; /* mantém o controle da imagem */
+    position: relative;
     width: 60%;
     height: auto;
-    margin: 2rem auto 0; /* centraliza horizontalmente */
+    margin: 2rem auto 0;
   }
 
   .hero-image {
@@ -146,7 +145,7 @@
   }
 
   .hero-image-container::before {
-    display: none; /* remove a bola rosa em telas pequenas */
+    display: none;
   }
 
   .hero-title {

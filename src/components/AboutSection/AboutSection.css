@@ -24,16 +24,14 @@
     rgba(248, 172, 109, 0.43) 29px
   );
 
-  /* Linha do texto */
-  line-height: 50px; /* igual ao espaçamento do gradiente */
+  line-height: 50px;
 }
 
-/* Tag */
 .about-tag {
   font-size: 0.9rem;
   text-transform: uppercase;
-  color: #d63384; /* texto rosa mais escuro */
-  background-color: #ffe6f0; /* fundo rosa claro */
+  color: #b05a79;
+  background-color: #ffe6f0;
   padding: 6px 14px;
   border-radius: 30px;
   margin-bottom: 10px;
